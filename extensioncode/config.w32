@@ -1,0 +1,13 @@
+// $Id: config.w32,v 1.1.1.1 2005/09/22 17:09:14 mstaylor Exp $
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("itextPHP", "for itextPHP support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("itextPHP", "enable itextPHP support", "no");
+
+if (PHP_ITEXTPHP != "no") {
+	EXTENSION("itextPHP", "itextPHP.c");
+}
+
